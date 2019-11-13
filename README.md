@@ -23,3 +23,4 @@
 
 三、实验过程：
 1.在Sting包下创建poem类，
+![images](https://github.com/COLLIN-BAI/poem/blob/master/images/1.PNG)
