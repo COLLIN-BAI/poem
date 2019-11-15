@@ -5,22 +5,22 @@ import java.io.InputStreamReader;
 public class poem {
 	public static void printsplit(String strsplit) {
 		for (int i = 0; i<strsplit.length(); i = i+7) {
-			if( i%2 == 1 ){//Èç¹ûi³ýÒÔ2µÄÓàÊýÎªÁã£¬ÎªÅ¼Êý¸ö×Ö£¬Ôò¼Ó¾äºÅ
-				String split = strsplit.substring(i, i+7);
-				System.out.print(split+ "¡£" + "\n");			
+			if( i%2 == 0 ){//å¦‚æžœié™¤ä»¥2çš„ä½™æ•°ä¸ä¸ºé›¶ï¼Œä¸ºå¥‡æ•°ä¸ªå­—ã€‚
+				String split = strsplit.substring(i, i+7);//æˆªå–å­—ç¬¦ä¸²ä»Žiåˆ°i+7ã€‚
+				System.out.print(split+ "ï¼Œ");		//è¾“å‡ºåŠ é€—å·ã€‚	
 			} 
-			if( i%2 == 0 ){//Èç¹ûi³ýÒÔ2µÄÓàÊý²»ÎªÁã£¬ÎªÆæÊý¸ö×Ö£¬Ôò¼Ó¶ººÅ
-				String split = strsplit.substring(i, i+7);
-				System.out.print(split+ "£¬");			
-			} 
+			if( i%2 == 1 ){//å¦‚æžœié™¤ä»¥2çš„ä½™æ•°ä¸ºé›¶ï¼Œä¸ºå¶æ•°ä¸ªå­—ã€‚
+				String split = strsplit.substring(i, i+7);//æˆªå–å­—ç¬¦ä¸²ä»Žiåˆ°i+7ã€‚
+				System.out.print(split+ "ã€‚" + "\n");		//è¾“å‡ºåŠ å¥å·ã€‚	
+			} 	
 		}	
 	}
-	//Ê¹ÓÃStringÀàµÄcontain()·½·¨£¬ÅÐ¶ÏÕû´®ÖÐÊÇ·ñ°üº¬×Ó´®     srcStr¸¸×Ö·û´®  findStr×Ó×Ö·û´®
+	//ä½¿ç”¨Stringç±»çš„contain()æ–¹æ³•ï¼Œåˆ¤æ–­æ•´ä¸²ä¸­æ˜¯å¦åŒ…å«å­ä¸²     srcStrçˆ¶å­—ç¬¦ä¸²  findStrå­å­—ç¬¦ä¸²
 	public static int count(String srcStr, String findStr) {
 		int count = 0;
 		int index = 0;
 		while ((index = srcStr.indexOf(findStr, index)) != -1) {
-//indexOf()µÄÓÃ·¨£º·µ»Ø×Ö·ûÖÐindexOf£¨String£©ÖÐ×Ó´®StringÔÚ¸¸´®ÖÐÊ×´Î³öÏÖµÄÎ»ÖÃ£¬´Ó0¿ªÊ¼£¡Ã»ÓÐ·µ»Ø-1
+//indexOf()çš„ç”¨æ³•ï¼šè¿”å›žå­—ç¬¦ä¸­indexOfï¼ˆStringï¼‰ä¸­å­ä¸²Stringåœ¨çˆ¶ä¸²ä¸­é¦–æ¬¡å‡ºçŽ°çš„ä½ç½®ï¼Œä»Ž0å¼€å§‹ï¼æ²¡æœ‰è¿”å›ž-1
 			index = index + findStr.length();
 			count++; // +1
 		}
@@ -33,7 +33,7 @@ public class poem {
         String strs = null;
         while(true){
             try {
-                System.out.println("ÊäÈë²ÎÊý£¬Í³¼Æ¹ÅÊ«ÖÐÄ³¸ö×Ö»ò´Ê³öÏÖµÄ´ÎÊý£º" );
+                System.out.println("è¾“å…¥å‚æ•°ï¼Œç»Ÿè®¡å¤è¯—ä¸­æŸä¸ªå­—æˆ–è¯å‡ºçŽ°çš„æ¬¡æ•°ï¼š" );
                 strs = br.readLine();
             }catch(IOException e){
                 e.printStackTrace();
@@ -41,7 +41,7 @@ public class poem {
             break;
         }
 		int count = count(args[0], strs);
-        System.out.println(strs + " ³öÏÖ " + count + " ´Î");
+        System.out.println(strs + " å‡ºçŽ° " + count + " æ¬¡");
     }
 }
 
