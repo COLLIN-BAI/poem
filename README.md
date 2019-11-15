@@ -21,6 +21,7 @@
 …………
 注意： 输入的内容，利用main方法中的args数组传递
 
-三、实验过程：
-1.在Sting包下创建poem类，
+三、操作过程：
+（1）首先在Eclipse 运行配置(Run Configuration)里的Argument里面添加main方法中的参数，我们实验要求是添加《长恨歌》不加标符号，添加截图如图。
 ![images](https://github.com/COLLIN-BAI/poem/blob/master/images/4.PNG)
+（2）运行程序后会先显示出加完标点符号的《长恨歌》（每7个汉字加入一个标点符号，奇数时加“，”，偶数时加“。”）
