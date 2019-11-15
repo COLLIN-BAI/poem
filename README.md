@@ -25,10 +25,10 @@
 （1）首先在Eclipse 运行配置(Run Configuration)里的Argument里面添加main方法中的参数，我们实验要求是添加《长恨歌》不加标符号，添加截图如图。
 ![images](https://github.com/COLLIN-BAI/poem/blob/master/images/4.PNG)
 （2）运行程序后会先显示出加完标点符号的《长恨歌》（每7个汉字加入一个标点符号，奇数时加“，”，偶数时加“。”），运行截图如图所示。
-！[images](https://github.com/COLLIN-BAI/poem/blob/master/images/1.PNG)
+![images](https://github.com/COLLIN-BAI/poem/blob/master/images/1.PNG)
 （3）显示出加标点符号的《长恨歌》后，会显示”输入参数，统计古诗中某个字或词出现的次数：”，运行截图如图所示。
-！[images](https://github.com/COLLIN-BAI/poem/blob/master/images/2.PNG)
+![images](https://github.com/COLLIN-BAI/poem/blob/master/images/2.PNG)
 （4）输入参数，会统计古诗中某个字或词出现的次数，操作演示如图所示。
-！[images](https://github.com/COLLIN-BAI/poem/blob/master/images/3.PNG)
+![images](https://github.com/COLLIN-BAI/poem/blob/master/images/3.PNG)
 
 四、核心代码：
