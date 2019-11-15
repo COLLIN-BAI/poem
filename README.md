@@ -34,6 +34,7 @@
 
 四、核心代码：
 1.统计古诗中某个字或词出现的次数方法：
+'''
 //使用String类的contain()方法，判断整串中是否包含子串     srcStr父字符串  findStr子字符串
 	public static int count(String srcStr, String findStr) {
 		int count = 0;
@@ -47,26 +48,31 @@
     //返回值count
 		return count;  
 	}
-  2.给无标点符号的《长恨歌》加标点方法：
-  public static void printsplit(String strsplit) {
-		for (int i = 0; i<strsplit.length(); i = i+7) {//判断长度是否大于i
-			if( i%2 == 0 ){//如果i除以2的余数不为零，为奇数个字。
-				String split = strsplit.substring(i, i+7);//截取字符串从i到i+7。
-				System.out.print(split+ "，");			//输出加逗号。
-			} 
-			if( i%2 == 1 ){//如果i除以2的余数为零，为偶数个字。
-				String split = strsplit.substring(i, i+7);//截取字符串从i到i+7
-				System.out.print(split+ "。" + "\n");		//输出加句号。	
-			} 
-		}	
-	}
-  3.异常处理方法：
-  while(true){
-            try {
-                System.out.println("输入参数，统计古诗中某个字或词出现的次数：" );
-                strs = br.readLine();
-            }catch(IOException e){
-                e.printStackTrace();
-            }
-            break;
-        }
+'''
+2.给无标点符号的《长恨歌》加标点方法：
+'''
+public static void printsplit(String strsplit) {
+	for (int i = 0; i<strsplit.length(); i = i+7) {//判断长度是否大于i
+		if( i%2 == 0 ){//如果i除以2的余数不为零，为奇数个字。
+			String split = strsplit.substring(i, i+7);//截取字符串从i到i+7。
+			System.out.print(split+ "，");			//输出加逗号。
+		} 
+		if( i%2 == 1 ){//如果i除以2的余数为零，为偶数个字。
+			String split = strsplit.substring(i, i+7);//截取字符串从i到i+7
+			System.out.print(split+ "。" + "\n");		//输出加句号。	
+		} 
+	}	
+}
+'''
+3.异常处理方法：
+'''
+while(true){
+           try {
+               System.out.println("输入参数，统计古诗中某个字或词出现的次数：" );
+               strs = br.readLine();
+           }catch(IOException e){
+               e.printStackTrace();
+           }
+           break;
+       }
+'''
