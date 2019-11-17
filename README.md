@@ -34,7 +34,7 @@
 
 ## 四、核心代码：
 ### 1.统计古诗中某个字或词出现的次数方法：
-```
+
 //使用String类的contain()方法，判断整串中是否包含子串     srcStr父字符串  findStr子字符串
 	public static int count(String srcStr, String findStr) {
 		int count = 0;
@@ -48,9 +48,9 @@
     //返回值count
 		return count;  
 	}
-```
+
 ### 2.给无标点符号的《长恨歌》加标点方法：
-```
+
 public static void printsplit(String strsplit) {
 	for (int i = 0; i<strsplit.length(); i = i+7) {//判断长度是否大于i
 		if( i%2 == 0 ){//如果i除以2的余数不为零，为奇数个字。
@@ -63,7 +63,7 @@ public static void printsplit(String strsplit) {
 		} 
 	}	
 }
-```
+
 ### 3.异常处理方法：
 
            try {
@@ -73,6 +73,6 @@ public static void printsplit(String strsplit) {
                e.printStackTrace();
            }
            break;
-
+```
 ## 五、实验感想：
 ### 本次实验掌握了字符串String及其方法的使用，掌握了异常处理结构，掌握了Eclipse 运行配置(Run Configuration)里的Argument里面添加到main方法中的添加参数的方法
