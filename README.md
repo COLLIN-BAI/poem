@@ -65,7 +65,7 @@ public static void printsplit(String strsplit) {
 }
 ```
 ### 3.异常处理方法：
-```
+
            try {
                System.out.println("输入参数，统计古诗中某个字或词出现的次数：" );
                strs = br.readLine();
@@ -73,6 +73,6 @@ public static void printsplit(String strsplit) {
                e.printStackTrace();
            }
            break;
-```
+
 ## 五、实验感想：
 ### 本次实验掌握了字符串String及其方法的使用，掌握了异常处理结构，掌握了Eclipse 运行配置(Run Configuration)里的Argument里面添加到main方法中的添加参数的方法
