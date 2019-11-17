@@ -31,7 +31,6 @@
 ![images](https://github.com/COLLIN-BAI/poem/blob/master/images/2.PNG)
 ### （4）输入参数，会统计古诗中某个字或词出现的次数，操作演示如图所示。
 ![images](https://github.com/COLLIN-BAI/poem/blob/master/images/3.PNG)
-### （5）异常处理，因为一般输入的信息都为字符串，所以一般不会存在异常。
 
 ## 四、核心代码：
 ### 1.统计古诗中某个字或词出现的次数方法：
@@ -67,7 +66,6 @@ public static void printsplit(String strsplit) {
 ```
 ### 3.异常处理方法：
 ```
-while(true){
            try {
                System.out.println("输入参数，统计古诗中某个字或词出现的次数：" );
                strs = br.readLine();
@@ -75,5 +73,6 @@ while(true){
                e.printStackTrace();
            }
            break;
-       }
 ```
+## 五、实验感想：
+## 本次实验掌握了字符串String及其方法的使用，掌握了异常处理结构，掌握了Eclipse 运行配置(Run Configuration)里的Argument里面添加到main方法中的添加参数的方法
